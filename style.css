@@ -1,0 +1,8 @@
+input, button, input-group {
+    font-size: 12px;
+    border: 2px solid aliceblue;
+   
+}
+button{
+    background-color: #3c71b9;
+}
