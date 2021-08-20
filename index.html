@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
-    crossorigin="anonymous">
+   <link rel="stylesheet" href="wp-content/themes/imperium/bootstrap.min.css">
 
     <!-- chart js -->
     <script src="wp-content/themes/imperium/Chart.min.js"></script>
@@ -15,21 +14,21 @@
      <!-- font awesome -->
      <script src="https://kit.fontawesome.com/9cf5a85bec.js" crossorigin="anonymous"></script>
 
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="styles.css">
+   
 
 </head>
-<body class="py-3 bg-light">
+<body class="p-5 bg-light">
 
-    <div class="container">
-        <div class="row g-3 mb-3">
+    
+        <div class="row mb-4">
             <div class="col-lg-7 col-12">
-                <div class="p-3 bg-white rounded mb-3">
-                        <div class="row"> 
-                        <div>
-                            <h4>Overview</h4>
-                            <br> 
-                        </div>
-                           
+                <div class="p-3 bg-white rounded mb-4">
+                    <div>
+                        <h4>Overview</h4>
+                        <br> 
+                    </div>
+                        <div class="row">  
                         <div class="col-4 border-end">
                             <img src="wp-content/themes/imperium/img/earnings.png" alt="" class="d-block mx-auto">
                             <h5 class="text-center">$0</h5>
@@ -50,7 +49,7 @@
                         </div>
                 </div>
                 <div >
-                    <div class="row g-3">
+                    <div class="row">
                         <div class="col-lg-6 col-12">
                          <div class="p-3 rounded bg-white">
                             <div Class="d-flex justify-content-between">
@@ -83,72 +82,70 @@
             </div>
             <div class="col-lg-5 col-12">
                 <div class="p-3 h-100 bg-white rounded">
-                   <div class="row h-100">
-                    <div class="d-flex justify-content-between" style="height: 50px;">
-                        <h4>Earnings by Range</h4>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control rounded-pill"  style = "position:relative; left:50px; z-index:1;font-size: 12px;"  placeholder="2021-08-10 to 2021-08-17" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <span class="input-group-text rounded-pill px-3 text-white" style="z-index: 2;font-size: 12px; background-color: #3c71b9;"    id="basic-addon2">Sort</span>
-                          </div>
-                    </div>
-                    <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
-                    <script>
-                        var xValues = ['Aug 11,2021','Aug 12,2021','Aug 13,2021','Aug 14,2021','Aug 15,2021','Aug 17,2021'];
-                        var yValues = [0,0,0,0,0,0,0];
-                        
-                        new Chart("myChart1", {
-                          type: "line",
-                          data: {
-                            labels: xValues,
-                            datasets: [{
-                              label: 'Earnings',
-                              fill: true,
-                              lineTension: 0,
-                              backgroundColor:  "#d6ecfa",
-                              borderColor: "#6ebcf0",
-                              data: yValues,
-                            }]
-                          },
-                        options: {
-                                scales: {
-                                    yAxes: [{
-                                        ticks:{ 
-                                            min: -1, max:1, 
-                                             maxTicksLimit: 3
+                 <div class="d-flex justify-content-between" style="height: 50px;">
+                     <h4>Earnings by Range</h4>
+                     <div class="input-group mb-3">
+                         <input type="text" class="form-control rounded-pill"  style = "position:relative; left:50px; z-index:1;font-size: 12px;"  placeholder="2021-08-10 to 2021-08-17" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                         <span class="input-group-text rounded-pill px-3 text-white" style="z-index: 2;font-size: 12px; background-color: #3c71b9;"    id="basic-addon2">Sort</span>
+                       </div>
+                 </div>
+                 <br>
+                 <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+                                <script>
+                                    var xValues = ['Aug 11,2021','Aug 12,2021','Aug 13,2021','Aug 14,2021','Aug 15,2021','Aug 17,2021'];
+                                    var yValues = [0,0,0,0,0,0,0];
+                                    
+                                    new Chart("myChart1", {
+                                      type: "line",
+                                      data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                          label: 'Earnings',
+                                          fill: true,
+                                          lineTension: 0,
+                                          backgroundColor:  "#d6ecfa",
+                                          borderColor: "#6ebcf0",
+                                          data: yValues,
+                                        }]
+                                      },
+                                    options: {
+                                            scales: {
+                                                yAxes: [{
+                                                    ticks:{ 
+                                                        min: -1, max:1, 
+                                                         maxTicksLimit: 3
+                                                        },
+                                                    scaleLabel:{
+                                                        display:true,
+                                                        labelString: 'Amount'
+                                                    }
+                                                }],
+                                                xAxes: [{
+                                                    scaleLabel:{
+                                                        display:true,
+                                                        labelString: 'Date'
+                                                    }
+                                                }]
                                             },
-                                        scaleLabel:{
-                                            display:true,
-                                            labelString: 'Amount'
-                                        }
-                                    }],
-                                    xAxes: [{
-                                        scaleLabel:{
-                                            display:true,
-                                            labelString: 'Date'
-                                        }
-                                    }]
-                                },
-                                elements:{ 
-                                    line: {
-                                        borderWidth:1 
+                                            elements:{ 
+                                                line: {
+                                                    borderWidth:1 
+                                                }
+                                            },
+                                            title:{
+                                                display:true,
+                                                position: 'bottom',
+                                                text: 'Current perion total: $0'
+                                            }
                                     }
-                                },
-                                title:{
-                                    display:true,
-                                    position: 'bottom',
-                                    text: 'Current perion total: $0'
-                                }
-                        }
-                        });
-                    </script>
-                   </div>
-                </div>                
+                                    });
+                                </script>
+                </div>
             </div>
         </div>
-    </div>
     
-    <div class="container">
-        <div class="row g-3" >
+    
+        <div class="row " >
           <div class="col-lg-5 col-12">
            <div class="p-3 h-100 bg-white rounded">
             <div class="d-flex justify-content-between" style="height: 50px;">
@@ -261,7 +258,7 @@ options: {
             </div>
           </div>
         </div>
-    </div>
+    
 
    
 </body>
