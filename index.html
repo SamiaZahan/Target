@@ -1,265 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- bootstrap -->
-   <link rel="stylesheet" href="wp-content/themes/imperium/bootstrap.min.css">
-
-    <!-- chart js -->
-    <script src="wp-content/themes/imperium/Chart.min.js"></script>
-
-     <!-- font awesome -->
-     <script src="https://kit.fontawesome.com/9cf5a85bec.js" crossorigin="anonymous"></script>
-
-     <link rel="stylesheet" href="styles.css">
-   
-
-</head>
-<body class="p-5 bg-light">
-
-    
-        <div class="row mb-4">
-            <div class="col-lg-7 col-12">
-                <div class="p-3 bg-white rounded mb-4">
-                    <div>
-                        <h4>Overview</h4>
-                        <br> 
-                    </div>
-                        <div class="row">  
-                        <div class="col-4 border-end">
-                            <img src="wp-content/themes/imperium/img/earnings.png" alt="" class="d-block mx-auto">
-                            <h5 class="text-center">$0</h5>
-                            <p class="text-center">30D Earnings</p>
-                        </div>
-                        <div class="col-4 border-end">
-                            <img src="wp-content/themes/imperium/img/withdrawal.png" alt="" class="d-block mx-auto">
-                            <h5 class="text-center">$0</h5>
-                            <p class="text-center">30D Withdrawal</p>
-                        </div>
-                        <div class="col-4">
-                            <img src="wp-content/themes/imperium/img/link.png" alt="" class="d-block mx-auto">
-                            <h5 class="text-center">0</h5>
-                            <p class="text-center">New Active Links in 30D</p>
-        
-                        </div>
-                                            
-                        </div>
-                </div>
-                <div >
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                         <div class="p-3 rounded bg-white">
-                            <div Class="d-flex justify-content-between">
-                                <h4>Earnings</h4>
-                                <a href="#" class="text-decoration-none">VIEW ALL</a>
+<!doctype html>
+<html lang="en-CA">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" id="boostrap-css" href="bootstrap.min.css">
+		<link rel="stylesheet" id="style-css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/7ad60e00a9.js" crossorigin="anonymous"></script>
+        <!-- Chart -->
+        <script src="Chart.min.js"></script>
+        <link rel="stylesheet" id="chart-css" href="Chart.min.css">
+		<title>Document</title>
+	</head>
+		<body>
+		<div class="main-body container-fluid px-0 mx-0">
+			<div class="row px-0 mx-0">
+                <div class="col-lg-12 main-content">
+                    <div class="container-fluid px-0 homepage-container">
+                        <div class="row px-0 mx-0 single-line">
+                            <div class="col-lg-7 mx-0 px-0 home-top-left-container">
+                                <div class="container-fluid px-0 mx-0">
+                                    <div class="row px-0 mx-0">
+                                        <div class="col-sm-12 account-overview px-2">
+                                            <div class="data-container">
+                                                <h4 class="w-100 home-section-title">Overview</h4>
+                                                <div class="container-fluid px-0 mx-0">
+                                                    <div class="row px-0 mx-0">
+                                                        <div class="col-sm px-0 mx-0 icon-holder">
+                                                            <img src="img/earnings.png" />
+                                                            <div class="w-100"><strong>$0</strong>
+                                                            </div>Total Earnings
+                                                        </div>
+                                                            
+                                                        <div class="col-sm px-0 mx-0 icon-holder">
+                                                                <img src="img/withdrawal.png" />
+                                                                <div class="w-100"><strong>$0</strong>
+                                                                </div>
+                                                            Total Withdrawn
+                                                        </div>
+                                                        <div class="col-sm px-0 mx-0 icon-holder">
+                                                                <img src="img/click.png" />
+                                                                <div class="w-100"><strong>0</strong>
+                                                                </div>
+                                                            Total Clicks
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 earnings-overview px-2">
+                                            <div class="data-container">
+                                                <h5 class="w-50 home-section-title" style="display: inline-block;">Earnings</h5>
+                                                <a href="/earnings/">
+                                                    <h5 class="w-50 home-section-title" style=" float:right; text-align: right;">VIEW ALL</h5>
+                                                </a>
+                                                <div class="w-100">
+                                                    <i class="fas fa-comments-dollar"></i>&nbsp;&nbsp;<strong>Total Conversions:</strong> 0
+                                                </div>
+                                                <div class="w-100">
+                                                    <i class="fas fa-credit-card"></i>&nbsp;&nbsp;<strong>Withdrawn Number of Times:</strong> 0
+                                                </div>
+                                                <div class="w-100">
+                                                    <i class="fas fa-money-check-alt"></i>&nbsp;&nbsp;<strong>Last Withdrawal:</strong> $0
+                                                </div>
+                                                <div class="w-100">
+                                                    <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;<strong>Last Withdrawal Date:</strong> Never
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 hits-overview px-2">
+                                            <div class="data-container">
+                                                <h5 class="w-50 home-section-title" style="display: inline-block;">Links</h5>
+                                                <a href="/urls/">
+                                                    <h5 class="w-50 home-section-title" style="float:right; text-align: right;">VIEW ALL</h5></a>
+                                                    <div class="w-100">
+                                                        <i class="fas fa-link"></i>&nbsp;&nbsp;<strong>Total Links:</strong> 0
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="fas fa-share-alt"></i>&nbsp;&nbsp;<strong>Active Links:</strong> 0
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="far fa-clock"></i>&nbsp;&nbsp;<strong>Pending Links:</strong> 0
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="fas fa-ban"></i>&nbsp;&nbsp;<strong>Disapproved Links:</strong> 0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 mx-0 px-0 home-top-right-container">
+                                    <div class="container-fluid px-0 mx-0">
+                                        <div class="row px-0 mx-0">
+                                            <div class="col-sm-12 earning-graph px-2">
+                                                <div class="data-container">
+                                                    <h5 class="w-50 home-section-title" style="margin: 5px 0; display: inline-block;">Earnings Chart</h5>
+                                                    <form class="w-50 earnings_range_form homepage-date-range-form" style="margin: 5px 0; display: inline-block;">
+								<input type="text" name="earnings_date_range" id="earnings_date_range" placeholder="Select Date Range" value="2021-08-27 to 2021-09-03" />
+								<input type="submit" value="Sort" />
+							                        </form>
+                                                    <canvas id="earnings_graph"></canvas>
+                                                    <div class="w-100 period-total-text">Current period total: <strong>$0</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <br>
-                          <p><span><i class="fas fa-calendar-alt mr-2"></i></span><strong> 30D Conversion:</strong> 0</p>
-                          <p><span><i class="fas fa-comments-dollar mr-2"></i></span><strong> Total Conversion:</strong> 2</p>
-                          <p><span><i class="fas fa-money-check-alt mr-2"></i></span><strong> Total Earnings:</strong> $170</p>
-                          <p><span><i class="fas fa-credit-card mr-2"></i></span><strong> Total Withdrawan:</strong> $0</p>
-                         </div>
                         </div>
-                        <div class="col-lg-6 col-12">
-                          <div class="p-3 rounded bg-white">
-                            <div Class="d-flex justify-content-between">
-                                <h4>Links</h4>
-                                <a href="#" class="text-decoration-none">VIEW PENDINGS</a>
-                             
+                        <div class="container-fluid px-0 homepage-container">
+                            <div class="row px-0 mx-0 single-line">
+                                <div class="col-lg-5 mx-0 px-0 home-top-left-container">
+                                    <div class="container-fluid px-0 mx-0">
+                                        <div class="row px-0 mx-0">
+                                            <div class="col-sm-12 conversion-graph px-2">
+                                                <div class="data-container">
+                                                    <h5 class="w-50 home-section-title" style="margin: 5px 0; display: inline-block;">Conversions Chart</h5>
+                                                    <form class="w-50 conversions_range_form homepage-date-range-form" style="margin: 5px 0; display: inline-block;">
+								                        <input type="text" name="conversions_date_range" id="conversions_date_range" placeholder="Select Date Range" value="2021-08-04 to 2021-09-03" />
+								                       <input type="submit" value="Sort" />
+							                        </form>
+                                                    <canvas id="conversion_graph"></canvas>
+                                                    <div class="w-100 period-total-text">Current period total: <strong>0</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mx-0 px-0 home-top-right-container">
+                                    <div class="container-fluid px-0 mx-0">
+                                        <div class="row px-0 mx-0">
+                                            <div class="col-sm-12 conversion-graph px-2">
+                                                <div class="data-container">
+                                                    <h5 class="w-100 home-section-title" style="margin-bottom:15px;">Most Clicks</h5>
+                                                    <div class="w-100 top_links_div" >
+										                <div class="w-80"><strong>Referral URL</strong></div>
+										                <div class="w-20"><strong>Clicks</strong></div>
+									                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 earnings-overview px-2">
+                                    <div class="container-fluid px-0 mx-0">
+                                        <div class="row px-0 mx-0">
+                                            <div class="col-sm-12 conversion-graph px-2">
+                                                <div class="data-container">
+                                                    <h5 class="w-50 home-section-title" style="display: inline-block;">Your States</h5>
+                                                    <div class="w-100">
+                                                        <i class="far fa-thumbs-up"></i>&nbsp;&nbsp;<strong>Links Approved 30D: </strong> 0
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="far fa-thumbs-down"></i>&nbsp;&nbsp;<strong>Links Disapproved 30D:</strong> 0
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="far fa-trash-alt"></i>&nbsp;&nbsp;<strong>Links Deleted 30D:</strong> $0
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="fas fa-link"></i>&nbsp;&nbsp;<strong>Total Links Approved:</strong> 12
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="fas fa-ban"></i>&nbsp;&nbsp;<strong>Total Links Declined:</strong> 5
+                                                    </div>
+                                                    <div class="w-100">
+                                                        <i class="fas fa-unlink"></i>&nbsp;&nbsp;<strong>Total Links Deleted:</strong> 2
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
-                            <br>
-                              <p><span><i class="fas fa-link mr-2"></i></span><strong> Total Links:</strong> 8</p>
-                                              <p><span><i class="fas fa-share-alt mr-2"></i></span><strong> Active Links:</strong> 6</p>
-                                              <p><span><i class="far fa-clock mr-2"></i></span><strong> Pending Links:</strong> 0</p>
-                                              <p><span><i class="fas fa-ban mr-2"></i></span><strong> Disapproved Links:</strong> 2</p>
-                          </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-12">
-                <div class="p-3 h-100 bg-white rounded">
-                 <div class="d-flex justify-content-between" style="height: 50px;">
-                     <h4>Earnings by Range</h4>
-                     <div class="input-group mb-3">
-                         <input type="text" class="form-control rounded-pill"  style = "position:relative; left:50px; z-index:1;font-size: 12px;"  placeholder="2021-08-10 to 2021-08-17" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                         <span class="input-group-text rounded-pill px-3 text-white" style="z-index: 2;font-size: 12px; background-color: #3c71b9;"    id="basic-addon2">Sort</span>
-                       </div>
-                 </div>
-                 <br>
-                 <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
-                                <script>
-                                    var xValues = ['Aug 11,2021','Aug 12,2021','Aug 13,2021','Aug 14,2021','Aug 15,2021','Aug 17,2021'];
-                                    var yValues = [0,0,0,0,0,0,0];
-                                    
-                                    new Chart("myChart1", {
-                                      type: "line",
-                                      data: {
-                                        labels: xValues,
-                                        datasets: [{
-                                          label: 'Earnings',
-                                          fill: true,
-                                          lineTension: 0,
-                                          backgroundColor:  "#d6ecfa",
-                                          borderColor: "#6ebcf0",
-                                          data: yValues,
-                                        }]
-                                      },
-                                    options: {
-                                            scales: {
-                                                yAxes: [{
-                                                    ticks:{ 
-                                                        min: -1, max:1, 
-                                                         maxTicksLimit: 3
-                                                        },
-                                                    scaleLabel:{
-                                                        display:true,
-                                                        labelString: 'Amount'
-                                                    }
-                                                }],
-                                                xAxes: [{
-                                                    scaleLabel:{
-                                                        display:true,
-                                                        labelString: 'Date'
-                                                    }
-                                                }]
-                                            },
-                                            elements:{ 
-                                                line: {
-                                                    borderWidth:1 
-                                                }
-                                            },
-                                            title:{
-                                                display:true,
-                                                position: 'bottom',
-                                                text: 'Current perion total: $0'
-                                            }
-                                    }
-                                    });
-                                </script>
-                </div>
+           
+                    <script>
+                        var earning_graph = document.getElementById("earnings_graph").getContext("2d");
+                        var earnings_chart = new Chart(earning_graph, {
+                            type: "line",
+                            data: {
+                                labels: ["Aug 28, 2021", "Aug 29, 2021", "Aug 30, 2021", "Aug 31, 2021", "Sep 01, 2021", "Sep 02, 2021", "Sep 03, 2021"],
+                                datasets: [{
+                                    label: "Earnings",
+                                    data: [0, 0, 0, 0, 0, 0, 0],
+                                    backgroundColor:"rgba(54, 162, 235, 0.2)",
+                                    borderColor: "rgba(54, 162, 235, 1)",
+                                    borderWidth: 1
+                                }
+                                ]
+                            },
+                            options: {
+		                        responsive: true,
+                                scales: {
+			                        xAxes: [{
+						                display: true,
+						                scaleLabel: {
+						                    display: true,
+						                    labelString: "Date"
+						                }
+					                }],
+                                    yAxes: [{
+                                        display: true,
+				                        scaleLabel: {
+					                        display: true,
+					                        labelString: "Amount"
+				                        },
+				                        ticks: {
+					                        stepSize: 10
+				                        }
+                                    }]
+                                }
+                            }
+                        }
+                    );
+                    var conversion_graph = document.getElementById("conversion_graph").getContext("2d");
+                    var conversion_chart = new Chart(conversion_graph, {
+                        type: "line",
+                        data: {
+                            labels: ["Aug 04, 2021", "Aug 05, 2021", "Aug 06, 2021", "Aug 07, 2021", "Aug 08, 2021", "Aug 09, 2021", "Aug 10, 2021", "Aug 11, 2021", "Aug 12, 2021", "Aug 13, 2021", "Aug 14, 2021", "Aug 15, 2021", "Aug 16, 2021", "Aug 17, 2021", "Aug 18, 2021", "Aug 19, 2021", "Aug 20, 2021", "Aug 21, 2021", "Aug 22, 2021", "Aug 23, 2021", "Aug 24, 2021", "Aug 25, 2021", "Aug 26, 2021", "Aug 27, 2021", "Aug 28, 2021", "Aug 29, 2021", "Aug 30, 2021", "Aug 31, 2021", "Sep 01, 2021", "Sep 02, 2021", "Sep 03, 2021"],
+                            datasets: [{
+                                label: "Conversions",
+                                data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                                backgroundColor:"rgba(54, 162, 235, 0.2)",
+                                borderColor: "rgba(54, 162, 235, 1)",
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+		                    responsive: true,
+                            scales: {
+			                    xAxes: [{
+						            display: true,
+						            scaleLabel: {
+						                display: true,
+						                labelString: "Date"
+					                }
+				                }],
+                                yAxes: [{
+                                    display: true,
+			                        scaleLabel: {
+				                        display: true,
+				                        labelString: "Total"
+			                        },
+			                        ticks: {
+				                        stepSize: 100
+			                        }
+                                }]
+                           }
+                    }
+                }
+            );
+
+                    </script>
+                </div>	
             </div>
         </div>
-    
-    
-        <div class="row " >
-          <div class="col-lg-5 col-12">
-           <div class="p-3 h-100 bg-white rounded">
-            <div class="d-flex justify-content-between" style="height: 50px;">
-                <h4>Conversions by Range</h4>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control rounded-pill"  style = "position:relative; left:50px; z-index:1;font-size: 12px;"  placeholder="2021-08-10 to 2021-08-17" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text rounded-pill px-3 text-white" style="z-index: 2;font-size: 12px; background-color: #3c71b9;"    id="basic-addon2">Sort</span>
-                  </div>
-            </div>
-            <br>
-            <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
-            <script>
-var xValues = ['Jul 18,2021','Jul 20,2021','Jul 22,2021','Jul 24,2021','Jul 26,2021','Jul 28,2021','Jul 30,2021','Aug 1,2021','Aug 3,2021','Aug 5,2021','Aug 7,2021','Aug 9,2021','Aug 11,2021','Aug 13,2021','Aug 15,2021','Aug 17,2021'];
-var yValues = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-
-new Chart("myChart2", {
-  type: "line",
-  data: {
-    labels: xValues,
-    datasets: [{
-      label: 'Convertion',
-      fill: true,
-      lineTension: 0,
-      backgroundColor:  "#d6ecfa",
-      borderColor: "#6ebcf0",
-      data: yValues,
-    }]
-  },
-options: {
-        scales: {
-            yAxes: [{
-                ticks:{ 
-                    min: -1, max:1, 
-                     maxTicksLimit: 3
-                    },
-                scaleLabel:{
-                    display:true,
-                    labelString: 'Total'
-                }
-            }],
-            xAxes: [{
-                scaleLabel:{
-                    display:true,
-                    labelString: 'Date'
-                }
-            }]
-        },
-        elements:{ 
-            line: {
-                borderWidth:1 
-            }
-        },
-        title:{
-            display:true,
-            position: 'bottom',
-            text: 'Current perion total: 0'
-        }
-}
-});
-            </script>
-           </div>
-          </div>
-          <div class="col-lg-4 col-12">
-            <div class="p-3 h-100  bg-white rounded">
-                <h4>Jump To</h4>
-                <br>
-                <h6 class="border-bottom">Referral Url</h6>
-                <div class="d-flex justify-content-between">
-                    <input class="rounded-pill p-1 w-75" type="text" placeholder="Unique Value">
-
-                    <button class="btn dropdown-toggle rounded-pill border w-25"style="font-size:12px" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ref ID
-                      </button>
-
-                    <button class=" rounded-pill text-white border-0 p-1 w-25"> View </button>
-                   </div>
-                   <h6 class="border-bottom">Incoming Payment</h6>
-                   <div class="d-flex justify-content-between">
-                    <input class="rounded-pill p-1 w-100" type="text" placeholder="Ref ID">
-                    <button class=" rounded-pill text-white border-0 p-1 w-25"> Search </button>
-                   </div>
-                   <h6 class="border-bottom">Support Ticket</h6>
-                   <div class="d-flex justify-content-between">
-                    <input class="rounded-pill p-1 w-100" type="text" placeholder="Ticket ID">
-                    <button class="rounded-pill text-white border-0 p-1 w-25"> View </button>
-                   </div>
-                   <h6 class="border-bottom">User</h6>
-                   <div class="d-flex justify-content-between">
-                    <input class="rounded-pill p-1 w-100" type="text" placeholder="User ID/Username/Email">
-                    <button class="rounded-pill text-white border-0 p-1 w-25"> View </button>
-                   </div>
-                
-            </div>
-          </div>
-          <div class="col-lg-3 col-12">
-            <div class="p-3 h-100 bg-white rounded">
-                <h4>Your stats</h4>
-                <br>
-                <p><span><i class="far fa-thumbs-up mr-2"></i></span><strong> Links Approved 30D: </strong>0</p>
-        
-                <p><span><i class="far fa-thumbs-down mr-2"></i></span><strong> Links Disapproved 30D: </strong>0</p>
-    
-                <p><span><i class="far fa-trash-alt mr-2"></i></span><strong> Links Deleted 30D: </strong>0</p>
-    
-                <p><span><i class="fas fa-link mr-2"></i></span><strong> Total Links Approved: </strong>12</p>
-    
-                <p><span><i class="fas fa-ban mr-2"></i></span><strong> Total Links Declined: </strong>5</p>
-    
-                <p><span><i class="fas fa-unlink mr-2"></i></span><strong> Total Links Deleted: </strong>2</p>
-            </div>
-          </div>
-        </div>
-    
-
-   
-</body>
+    </body>
 </html>
